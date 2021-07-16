@@ -31,3 +31,15 @@ por medio de la base de datos, pero sin utilizar sql nativo dentro del codigo, t
 ### Inyeccion de dependencias
 Se plantea el uso de inyeccion de dependencias, esto para evitar el acoplamiento del codigo que puede
 provocar que en un futuro sea dificil de modificar y mantener
+
+### Realizacion de la solucion
+Se planea consultar la base de datos para revisar la informacion con la que se cuenta de primera mano,
+despues se realizara un diagrama para ver la estructura de la base de datos y sus relaciones, una vez
+comprendido esa parte, se planea investigar respecto a sql alchemy y como funciona el ORM, una vez realizado se haran 
+algunas pruebas para ver como formar los queries exponiendo un servicio de prueba (que ese codigo no 
+estara en la version final del api) y los filtros a aplicar, por ultimo se procedera a realizar cada funcionalidad
+de cada capa, tambien se contempla una respuesta standard como respuesta del api.
+
+Para la parte de los likes, se planea ver como debe funcionar y proponer una estructura en un diagrama para
+solventar esa funcionalidad.
+
