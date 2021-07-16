@@ -65,7 +65,7 @@ este campo es para ver de manera global cuantos likes tiene la propiedad, esto p
 con más likes (se podría filtrar por el campo status) y así poder tener las propiedades con más likes dependiendo el estatus
 de la misma por ejemplo.
 
-##Explicacion del nuevo diagrama
+##Explicación del nuevo diagrama
 Se agregan las siguientes tablas:
 - country: Se agrega la tabla pais, ya que la ciudad no es suficientemente explícita como para conocer cuál es el pais al 
   que pertenece, si a mexico o colombia, con esa tabla se solventa esa parte
@@ -73,8 +73,11 @@ Se agregan las siguientes tablas:
 rápido para la base de datos buscar un entero que un string, como esta actualmente
   
 Adicional a eso, se agrega un campo a la tabla property, en el cual se relaciona el status directamente, eso para que ese campo
-sirva para manejar el ultimo status de la propiedad, y la tabla status_history solo sirva como un historico y no tener que ir a
-esa tabla para traer el ultimmo statos que tiene la propiedad
+sirva para manejar el último status de la propiedad, y la tabla status_history solo sirva como un histórico y no tener que ir a
+esa tabla para traer el último status que tiene la propiedad
+
+También se pusieron los campos como no nulos, esto porque los nulos generalmente causan muchos problemas al trabajar con ellos en
+código.
 
 ##Dudas
 ###¿Cómo se relacionan la información en base de datos?
